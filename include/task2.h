@@ -2,11 +2,10 @@
 #define TASK2_H
 
 #include <cstdlib>
-#include <ctime>
 #include <iostream>
 
-template<class T>
-T* createArr(T(*gen)(), unsigned N) {
+template<class T, unsigned N>
+T* createArr(T(*gen)()) {
 	auto arr = new T[N];
 	for (unsigned i = 0; i < N; i++) {
 		arr[i] = gen();

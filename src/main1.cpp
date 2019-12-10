@@ -3,15 +3,14 @@
 
 int main() {
 	const unsigned n1 = 27, n2 = 14;
-	std::srand((unsigned)std::time(0));
 
-	int* array1 = createArr<int>(genForTest, n1);
+	int* array1 = createArr<int, n1>(genForTest);
 	printArr(array1, n1);
 	msort(array1, n1);
 	std::cout << "Sorted:" << std::endl;
 	printArr(array1, n1);
 
-	char** array2 = createArr<char*>(genForTest, n2);
+	char** array2 = createArr<char*, n2>(genForTest);
 	printArr(array2, n2);
 	msort(array2, n2);
 	std::cout << "Sorted:" << std::endl;
