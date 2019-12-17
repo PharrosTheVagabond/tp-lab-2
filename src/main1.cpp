@@ -44,10 +44,10 @@ int main() {
 	std::cout << "Sorted:" << std::endl;
 	printArr(array2, n2);
 
-	delete array1;
+	delete[] array1;
 	for (unsigned i = 0; i < n2; i++) {
-		delete(array2[i]);
+		delete[](array2[i]);
 	}
-	delete array2;
+	delete[] array2;
 	return 0;
 }

@@ -37,6 +37,6 @@ int main() {
 	map<int, n>(arr, changeForTest);
 	printArr(arr, n);
 
-	delete arr;
+	delete[] arr;
 	return 0;
 }
